@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light only">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>A thank-you gift for you</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=6">
+</head>
+<body class="ap">
+<div class="blob a"></div><div class="blob b"></div>
+<div class="petals fixedp" id="pet" aria-hidden="true"></div>
+<main class="apwrap">
+  <header class="aph"><span class="aplogo" id="aplogo"></span><span id="apco"></span></header>
+  <section class="apcard" id="apmain">
+    <span class="eyebrow">A thank-you gift for you</span>
+    <h1 id="apname"></h1>
+    <p class="aprole" id="aprole"></p>
+    <p class="apmsg" id="apmsg"></p>
+    <p class="apsig" id="apsig"></p>
+    <div class="ticket"><div class="tic" id="apic"></div><div><small>Your gift</small><b id="apgift"></b><span id="apgd"></span></div></div>
+  </section>
+  <section class="apcard" id="apsel">
+    <span class="eyebrow">Your day</span>
+    <h2 id="bhead">Your gift is booked for</h2>
+    <div class="book" id="book">
+      <div class="bdate"><small id="bwk">Tuesday</small><b id="bday">6</b><span id="bmon">October 2026</span></div>
+      <div class="bclock"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="#fff" stroke="#e8a0b4" stroke-width="3"/><g stroke="#e8a0b4" stroke-width="2" stroke-linecap="round" id="ticks"></g><line id="hh" x1="50" y1="50" x2="50" y2="28" stroke="#a3334f" stroke-width="4.5" stroke-linecap="round"/><line id="mh" x1="50" y1="50" x2="50" y2="17" stroke="#e63e6d" stroke-width="3" stroke-linecap="round"/><circle cx="50" cy="50" r="3.5" fill="#a3334f"/></svg><b id="btime">3:30 PM</b></div>
+    </div>
+    <p class="aphint" id="aphint">Please let us know you got it, so we are ready for you.</p>
+    <a class="btn fill full" id="apgo" target="_blank" rel="noopener">Confirm on WhatsApp</a>
+    <a class="btn ghost full" id="apalt" target="_blank" rel="noopener" style="margin-top:10px">I need a different time</a>
+  </section>
+  <section class="apcard apdone" id="apdone" hidden>
+    <div class="big"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <h2>Thank you!</h2>
+    <p class="aphint" id="apdonetxt"></p>
+    <button class="btn ghost full" type="button" id="apchange">Change my choice</button>
+  </section>
+  <p class="apfoot">Made with <a href="index.html">SweetHeart</a></p>
+</main>
+<script src="js/config.js?v=6"></script>
+<script src="js/shared.js?v=6"></script>
+<script src="js/backend.js?v=6"></script>
+<script>var GIFT_ICONS={"stay": "<svg viewBox=\"0 0 64 64\"><rect x=\"8\" y=\"30\" width=\"48\" height=\"16\" rx=\"4\" fill=\"#f7a1bd\"/><rect x=\"8\" y=\"20\" width=\"14\" height=\"26\" rx=\"4\" fill=\"#e63e6d\"/><rect x=\"26\" y=\"26\" width=\"18\" height=\"10\" rx=\"3\" fill=\"#fff\"/><path d=\"M8 46v8M56 46v8\" stroke=\"#a3334f\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M46 6a8 8 0 1 0 9 10 6 6 0 0 1-9-10z\" fill=\"#f7c764\"/></svg>", "dinner": "<svg viewBox=\"0 0 64 64\"><circle cx=\"32\" cy=\"34\" r=\"16\" fill=\"#fff\" stroke=\"#e8a0b4\" stroke-width=\"3\"/><circle cx=\"32\" cy=\"34\" r=\"8\" fill=\"#fde0e0\"/><path d=\"M10 14v12a4 4 0 0 0 4 4v22M14 14v10M18 14v12\" stroke=\"#a3334f\" stroke-width=\"3\" stroke-linecap=\"round\" fill=\"none\"/><path d=\"M54 14c-5 4-5 14 0 18v20\" stroke=\"#a3334f\" stroke-width=\"3\" stroke-linecap=\"round\" fill=\"none\"/></svg>", "spa": "<svg viewBox=\"0 0 64 64\"><path d=\"M32 10c8 8 8 24 0 34-8-10-8-26 0-34z\" fill=\"#f7a1bd\"/><path d=\"M12 22c12 0 20 10 20 22-12 0-20-10-20-22z\" fill=\"#e63e6d\" opacity=\".85\"/><path d=\"M52 22c-12 0-20 10-20 22 12 0 20-10 20-22z\" fill=\"#e63e6d\" opacity=\".85\"/><path d=\"M8 52h48\" stroke=\"#6bb6e8\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>", "voucher": "<svg viewBox=\"0 0 64 64\"><path d=\"M6 16h52v11a5 5 0 0 0 0 10v11H6V37a5 5 0 0 0 0-10z\" fill=\"#f7c764\"/><path d=\"M42 16v32\" stroke=\"#fff\" stroke-width=\"3\" stroke-dasharray=\"4 4\"/><path d=\"M12 21.5C5 16 2 12.4 2 8.6 2 5.9 4.1 4 6.6 4c1.9 0 3.7 1 5.4 3.1C13.7 5 15.5 4 17.4 4 19.9 4 22 5.9 22 8.6c0 3.8-3 7.4-10 12.9z\" transform=\"translate(12 22) scale(1.1)\" fill=\"#e63e6d\"/></svg>", "trip": "<svg viewBox=\"0 0 64 64\"><circle cx=\"48\" cy=\"16\" r=\"9\" fill=\"#f7c764\"/><path d=\"M8 54q22-8 48 0\" fill=\"none\" stroke=\"#6bb6e8\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M26 52V26\" stroke=\"#a8713f\" stroke-width=\"4\"/><path d=\"M26 26q-12-2-16 6M26 26q12-2 16 6M26 26q-4-12-14-12M26 26q4-12 14-12\" fill=\"none\" stroke=\"#3f9a63\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>", "other": "<svg viewBox=\"0 0 64 64\"><rect x=\"10\" y=\"26\" width=\"44\" height=\"28\" rx=\"4\" fill=\"#f7a1bd\"/><rect x=\"8\" y=\"20\" width=\"48\" height=\"10\" rx=\"3\" fill=\"#e63e6d\"/><rect x=\"29\" y=\"20\" width=\"6\" height=\"34\" fill=\"#fff\" opacity=\".85\"/><path d=\"M32 20c-8-12-18-4-10 0M32 20c8-12 18-4 10 0\" fill=\"none\" stroke=\"#e63e6d\" stroke-width=\"3.5\" stroke-linecap=\"round\"/></svg>"};</script>
+<script src="js/appreciation.js?v=6" charset="utf-8"></script>
+</body>
+</html>

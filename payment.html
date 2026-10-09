@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light only">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Payment | SweetHeart</title>
+<meta name="description" content="Secure payment for your SweetHeart upgrade.">
+<link rel="icon" href="img/logo.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;600;700&family=Noto+Serif+Sinhala:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=6">
+</head>
+<body data-page="payment" data-title="pay.title">
+<div class="blob a"></div><div class="blob b"></div>
+<header class="hdr"><div class="wrap">
+  <a class="brand" href="index.html"><img class="logo-img" src="img/logo.png" alt="" height="38"><span data-brand>SweetHeart</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="index.html" data-nav="home" data-i18n="nav.home">Home</a>
+    <div class="dd"><button type="button" aria-haspopup="true" data-i18n="nav.cards">Cards</button><div class="dd-menu"><a href="date-invite.html"><span data-i18n="svc.date.t">Date Invite</span><small class="live" data-i18n="svc.live">Live</small></a><a href="special-days.html"><span data-i18n="svc.spec.t">Special Days</span><small class="live" data-i18n="svc.live">Live</small></a><a href="index.html#services"><span data-i18n="svc.wed.t">Wedding Invitation</span><small data-i18n="svc.soon">Soon</small></a><a href="index.html#services"><span data-i18n="svc.bday.t">Birthday Wishes</span><small data-i18n="svc.soon">Soon</small></a></div></div>
+    <div class="dd"><button type="button" aria-haspopup="true" data-i18n="nav.gifts">Gifts</button><div class="dd-menu"><a href="gifts.html"><span data-i18n="cat.all">All gifts</span></a><a href="gifts.html?cat=teddy"><span data-i18n="cat.teddy">Teddy Bears</span></a><a href="gifts.html?cat=chocolate"><span data-i18n="cat.chocolate">Chocolates</span></a><a href="gifts.html?cat=flowers"><span data-i18n="cat.flowers">Flowers</span></a><a href="gifts.html?cat=cakes"><span data-i18n="cat.cakes">Cakes</span></a><a href="gifts.html?cat=jewellery"><span data-i18n="cat.jewellery">Jewellery</span></a><a href="gifts.html?cat=perfume"><span data-i18n="cat.perfume">Perfumes</span></a><a href="gifts.html?cat=personal"><span data-i18n="cat.personal">Personalised</span></a><a href="gifts.html?cat=hampers"><span data-i18n="cat.hampers">Gift Hampers</span></a><span class="ddh" data-i18n="nav.shopfor">Shop for</span><a href="gifts.html?for=women"><span data-i18n="for.women">For Women</span></a><a href="gifts.html?for=men"><span data-i18n="for.men">For Men</span></a><a href="gifts.html?for=girls"><span data-i18n="for.girls">For Girls</span></a><a href="gifts.html?for=boys"><span data-i18n="for.boys">For Boys</span></a></div></div>
+    <a href="about.html" data-nav="about" data-i18n="nav.about">About</a>
+    <a href="contact.html" data-nav="contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <div class="act">
+    <button class="btn ghost lang" type="button" data-i18n="lang.switch">&#xDC3;&#xDD2;&#xD82;&#xDC4;&#xDBD;</button>
+    <a class="btn ghost" href="account.html?mode=login" data-i18n="nav.login">Log in</a>
+    <a class="btn fill" href="account.html?mode=signup" data-i18n="nav.signup">Sign up</a>
+  </div>
+  <a class="cartbtn" href="cart.html" aria-label="Cart" data-i18n-aria="nav.cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg><span class="cnt" hidden>0</span></a>
+  <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="panel" data-i18n-aria="nav.menu"><span></span></button>
+</div></header>
+<div class="scrim" id="scrim"></div>
+<aside class="panel" id="panel" aria-hidden="true">
+  <div class="ph"><a class="brand" href="index.html"><img class="logo-img" src="img/logo.png" alt="" height="38"><span data-brand>SweetHeart</span></a><button class="xbtn" id="xbtn" type="button" aria-label="Close menu" data-i18n-aria="nav.close">&times;</button></div>
+  <a class="pl" href="index.html" data-i18n="nav.home">Home</a>
+  <details><summary data-i18n="nav.cards">Cards</summary><a href="date-invite.html"><span data-i18n="svc.date.t">Date Invite</span><small class="live" data-i18n="svc.live">Live</small></a><a href="special-days.html"><span data-i18n="svc.spec.t">Special Days</span><small class="live" data-i18n="svc.live">Live</small></a><a href="index.html#services"><span data-i18n="svc.wed.t">Wedding Invitation</span><small data-i18n="svc.soon">Soon</small></a><a href="index.html#services"><span data-i18n="svc.bday.t">Birthday Wishes</span><small data-i18n="svc.soon">Soon</small></a></details>
+  <details><summary data-i18n="nav.gifts">Gifts</summary><a href="gifts.html"><span data-i18n="cat.all">All gifts</span></a><a href="gifts.html?cat=teddy"><span data-i18n="cat.teddy">Teddy Bears</span></a><a href="gifts.html?cat=chocolate"><span data-i18n="cat.chocolate">Chocolates</span></a><a href="gifts.html?cat=flowers"><span data-i18n="cat.flowers">Flowers</span></a><a href="gifts.html?cat=cakes"><span data-i18n="cat.cakes">Cakes</span></a><a href="gifts.html?cat=jewellery"><span data-i18n="cat.jewellery">Jewellery</span></a><a href="gifts.html?cat=perfume"><span data-i18n="cat.perfume">Perfumes</span></a><a href="gifts.html?cat=personal"><span data-i18n="cat.personal">Personalised</span></a><a href="gifts.html?cat=hampers"><span data-i18n="cat.hampers">Gift Hampers</span></a><span class="ddh" data-i18n="nav.shopfor">Shop for</span><a href="gifts.html?for=women"><span data-i18n="for.women">For Women</span></a><a href="gifts.html?for=men"><span data-i18n="for.men">For Men</span></a><a href="gifts.html?for=girls"><span data-i18n="for.girls">For Girls</span></a><a href="gifts.html?for=boys"><span data-i18n="for.boys">For Boys</span></a></details>
+  <a class="pl" href="about.html" data-i18n="nav.about">About</a>
+  <a class="pl" href="contact.html" data-i18n="nav.contact">Contact</a>
+  <div class="pa">
+    <a class="btn ghost" href="account.html?mode=login" data-i18n="nav.login">Log in</a>
+    <a class="btn fill" href="account.html?mode=signup" data-i18n="nav.signup">Sign up</a>
+    <button class="btn ghost lang" type="button" data-i18n="lang.switch">&#xDC3;&#xDD2;&#xD82;&#xDC4;&#xDBD;</button>
+  </div>
+</aside>
+<main><div class="wrap"><div class="pg"><h1 data-i18n="pay.title">Complete your order</h1>
+  <div class="cartgrid">
+    <div class="sumbox">
+      <h3>Choose how to pay</h3>
+      <div class="opts">
+        <label class="po"><input type="radio" name="pm" value="card" checked><span><b>Pay by card</b><small>Visa or Mastercard. You are taken to your bank's secure page to enter your card details and the one-time code (OTP) the bank sends you. We never see or store your card details.</small></span></label>
+        <label class="po"><input type="radio" name="pm" value="usdt"><span><b>Pay with USDT (crypto)</b><small>Send USDT from your own wallet. We check the payment automatically and confirm it here.</small></span></label>
+      </div>
+      <div class="pp2" id="pcard">
+        <div class="lock"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1f7a4a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Protected by your bank's 3-D Secure check</div>
+        <button class="btn fill full" type="button" id="paycard" disabled>Pay securely with card</button>
+      </div>
+      <div class="pp2" id="pusdt" hidden>
+        <label class="fld" style="display:block;margin:0"><span style="display:block;font-weight:700;font-size:.8rem;margin-bottom:6px">Network</span>
+          <select id="net"><option>TRC20 (Tron) - low fees</option><option>BEP20 (BNB Smart Chain)</option></select></label>
+        <div class="qr">QR code appears here</div>
+        <div class="walbox"><code id="wal">Wallet address will appear here</code><button class="btn ghost" type="button" id="walcopy" disabled>Copy</button></div>
+        <p class="hint">The exact USDT amount is shown here when you pay. Send <b>only USDT</b> on the network you chose. Anything else can be lost for good. Wait for the confirmation here after you send.</p>
+        <button class="btn fill full" type="button" id="usdtchk" disabled>I have paid - check my payment</button>
+      </div>
+      <div class="notice" id="paynote">Payments are not live yet. This is a preview of the payment page.</div>
+      <button class="btn ghost full" type="button" id="simok">Preview: show the success message</button>
+    </div>
+    <div class="sumbox">
+      <h3 data-i18n="co.summary">Order summary</h3>
+      <div class="r"><span>Invitation upgrade<br><small id="paysub">4 or 5 places</small></span><span id="payprice">LKR 100</span></div>
+      <div class="r tot"><span data-i18n="cart.total">Total</span><span id="paytot">LKR 100</span></div>
+      <div class="lock">One-time fee. No card details are stored on SweetHeart.</div>
+    </div>
+  </div></div></div></main>
+<footer class="ftr">
+  <div><a href="about.html" data-i18n="nav.about">About</a><a href="contact.html" data-i18n="nav.contact">Contact</a><a href="privacy.html" data-i18n="nav.privacy">Privacy Policy</a><a href="terms.html" data-i18n="nav.terms">Terms</a></div>
+  <div style="margin-top:8px"><span data-i18n="foot.made">Made with love in Sri Lanka</span> &middot; &copy; 2026 <span data-brand>SweetHeart</span></div>
+</footer>
+<script src="js/config.js?v=6"></script>
+<script src="js/i18n.js?v=6" charset="utf-8"></script>
+<script src="js/i18n2.js?v=6" charset="utf-8"></script>
+<script src="js/site.js?v=6" charset="utf-8"></script>
+<script src="js/shared.js?v=6" charset="utf-8"></script>
+<script>
+(function(){
+  var n=new URLSearchParams(location.search).get("n")||"4", price=(window.SH&&SH.upgradePrice)||100, cur=(window.SH&&SH.currency)||"LKR";
+  var fmt=cur+" "+price.toLocaleString("en-US");
+  document.getElementById("paysub").textContent=n+" places";
+  document.getElementById("payprice").textContent=fmt; document.getElementById("paytot").textContent=fmt;
+  document.getElementById("paycard").textContent="Pay "+fmt+" securely with card";
+  var live=window.SH&&SH.payments;
+  if(window.SH&&SH.usdtWallet){document.getElementById("wal").textContent=SH.usdtWallet;}
+  if(live){document.getElementById("paynote").hidden=true;document.getElementById("simok").hidden=true;}
+  document.querySelectorAll("input[name=pm]").forEach(function(r){r.addEventListener("change",function(){
+    document.getElementById("pcard").hidden=r.value!=="card"||!r.checked; document.getElementById("pusdt").hidden=r.value!=="usdt"||!r.checked;});});
+  document.getElementById("simok").addEventListener("click",function(){
+    showModal({kind:"ok",title:"Payment successful",text:"Thank you! In the real version your invitation link appears right away. This is only a preview.",
+      buttons:[{label:"Back to the link maker",kind:"fill",onClick:function(){location.href="date-invite.html";}}]});});
+})();
+</script>
+</body>
+</html>
