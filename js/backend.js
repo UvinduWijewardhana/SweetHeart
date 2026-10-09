@@ -8,8 +8,10 @@ var BE = {
     if (/^eyJ/.test(SH.supabaseKey)) h["Authorization"] = "Bearer " + SH.supabaseKey;
     return h;
   },
+  /* the address, even if "/rest/v1/" was copied along with it */
+  base: function () { return String(SH.supabaseUrl).trim().replace(/\/+$/, "").replace(/\/rest\/v1$/, ""); },
   call: function (fn, body) {
-    return fetch(SH.supabaseUrl.replace(/\/+$/, "") + "/rest/v1/rpc/" + fn, {
+    return fetch(BE.base() + "/rest/v1/rpc/" + fn, {
       method: "POST",
       headers: BE.headers(),
       body: JSON.stringify(body)
